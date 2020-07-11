@@ -67,7 +67,7 @@
                         is where life happens
                     </span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
         <main>
@@ -164,7 +164,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id='section-tours'>
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -199,7 +199,7 @@
                                         <p class="card__price-value">$297</p>
                                     </div>
                                     <a
-                                        href="#"
+                                        href="#popup"
                                         class="btn btn--white"
                                     >
                                         Book now
@@ -236,7 +236,7 @@
                                         <p class="card__price-value">$497</p>
                                     </div>
                                     <a
-                                        href="#"
+                                        href="#popup"
                                         class="btn btn--white"
                                     >
                                         Book now
@@ -273,7 +273,7 @@
                                         <p class="card__price-value">$897</p>
                                     </div>
                                     <a
-                                        href="#"
+                                        href="#popup"
                                         class="btn btn--white"
                                     >
                                         Book now
@@ -421,7 +421,18 @@
         </main>
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source
+                        srcset="
+                            ./img/logo-green-small-1x.png 1x,
+                            ./img/logo-green-2x.png 2x
+                        "
+                        media="(max-width : 37.5em)">
+                    <img
+                        srcset="img/logo-green-1x.png 1x,img/logo-green-2x.png 2x"
+                        alt="Logo"
+                    >
+                </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -460,6 +471,29 @@
                 </div>
             </div>
         </footer>
+        <div class="popup" id='popup'>
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">
+                        &times;
+                    </a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Important &ndash;Please read these terms before booking
+                    </h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam non nisi vel recusandae aperiam neque, ipsum vitae amet, temporibus, fugit culpa eveniet commodi deleniti dolorem! Laborum aliquam doloribus pariatur soluta architecto. Sequi eos nisi facilis quisquam iusto dolorem ducimus corporis!
+                    </p>
+                    <a href="#" class="btn btn--green">
+                        order now
+                    </a>
+                </div>
+            </div>
+        </div>
         <!-- <section class='grid-test'>
             <div class="row">
                 <div class="col-1-of-2">
